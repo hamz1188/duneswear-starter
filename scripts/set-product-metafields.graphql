@@ -1,0 +1,18 @@
+# Set product metafields to reference a drop (Admin API)
+mutation MetafieldsSet($metafields: [MetafieldsSetInput!]!) {
+  metafieldsSet(metafields: $metafields) {
+    userErrors { field message }
+  }
+}
+# Variables example:
+# {
+#   "metafields": [
+#     {
+#       "ownerId": "gid://shopify/Product/1234567890",
+#       "namespace": "custom",
+#       "key": "drop_ref",
+#       "type": "metaobject_reference",
+#       "value": "gid://shopify/Metaobject/XXXXXXXX"
+#     }
+#   ]
+# }

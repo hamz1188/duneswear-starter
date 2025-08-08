@@ -1,0 +1,16 @@
+{
+  "name": "@duneswear/admin",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001"
+  },
+  "dependencies": {
+    "@shopify/app-bridge": "^3.7.10",
+    "@shopify/polaris": "^12.16.0",
+    "next": "14.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

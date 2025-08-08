@@ -1,0 +1,14 @@
+{
+  "name": "duneswear-starter",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev:storefront": "pnpm --filter @duneswear/storefront dev",
+    "dev:admin": "pnpm --filter @duneswear/admin dev",
+    "build": "pnpm -r build"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

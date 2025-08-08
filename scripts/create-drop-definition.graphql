@@ -1,0 +1,22 @@
+# Create the `drop` metaobject definition (run via Admin API)
+mutation MetaobjectDefinitionUpsert($def: MetaobjectDefinitionUpsertInput!) {
+  metaobjectDefinitionUpsert(definition: $def) {
+    userErrors { field message }
+  }
+}
+# Variables example:
+# {
+#   "def": {
+#     "name": "drop",
+#     "type": "drop",
+#     "fieldDefinitions": [
+#       {"name":"title","key":"title","type":"single_line_text_field","required":true},
+#       {"name":"slug","key":"slug","type":"single_line_text_field","required":true},
+#       {"name":"theme","key":"theme","type":"single_line_text_field"},
+#       {"name":"hero_image","key":"hero_image","type":"file_reference"},
+#       {"name":"launch_datetime","key":"launch_datetime","type":"date_time"},
+#       {"name":"status","key":"status","type":"single_line_text_field"},
+#       {"name":"story","key":"story","type":"multi_line_text_field"}
+#     ]
+#   }
+# }
